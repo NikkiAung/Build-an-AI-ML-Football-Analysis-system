@@ -3,3 +3,10 @@ env/
 *.pyc
 .DS_Store
 yolov8x.pt
+.env
+training/football-players-detection-1
+trackers/__pycache__
+runs/detect/*
+output_videos/output_video.avi
+input_videos/08fd33_4.mp4
+models/*
