@@ -14,15 +14,15 @@ def main():
                                        stub_path='stubs/track_stubs.pkl')
     
 
-    #save cropped image of a player
-    for track_id, player in tracks['players'][0].items():
-        bbox = player['bbox']
-        frame = video_frames[0]
+    # # save cropped image of a player
+    # for track_id, player in tracks['players'][0].items():
+    #     bbox = player['bbox']
+    #     frame = video_frames[0]
 
-        cropped_image = frame[int(bbox[1]):int(bbox[3]),int(bbox[0]):int(bbox[2])]
+    #     cropped_image = frame[int(bbox[1]):int(bbox[3]),int(bbox[0]):int(bbox[2])]
 
-        cv2.imwrite(f'output_videos/cropped_image.jpg', cropped_image)
-        break
+    #     cv2.imwrite(f'output_videos/cropped_image.jpg', cropped_image)
+    #     break
 
     # Draw output 
     ## Draw object Tracks
